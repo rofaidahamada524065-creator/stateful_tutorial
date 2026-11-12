@@ -1,3 +1,4 @@
+import 'package:basic_statefull/shopping/cartfullscreen.dart';
 import 'package:basic_statefull/shopping/homepage_item.dart';
 import 'package:basic_statefull/shopping/shopping_provider.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class ShoppingHomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Placeholder()),
+          MaterialPageRoute(builder: (context) => cartscreen()),
         ),
         child: Icon(Icons.shopping_cart, color: Colors.teal),
       ),
